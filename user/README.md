@@ -3,6 +3,11 @@
 ## Chạy backend trên Windows
 
 Backend đã có virtual environment tại `backend\.venv`. Mở Terminal thứ nhất:
+Chưa có venv thì phải install
+py -3 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn main:app --reload --host 127.0.0.1 --port 8000
+
 
 ```powershell
 cd D:\homework\CNPM\BE-DEV-tudongdangonngu-cd-ci\user\backend
